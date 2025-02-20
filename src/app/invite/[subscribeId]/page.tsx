@@ -14,7 +14,7 @@ interface InvitePageProps {
 export default async function InvitePage(props: InvitePageProps) {
   const { subscribeId } = await props.params
 
-  const inviteLink = `http://localhost:3333/invites/${subscribeId}`
+  const inviteLink = `https://api-node-nlw-connect.onrender.com/invites/${subscribeId}`
 
   return (
     <div className="min-h-dvh flex items-center justify-between gap-16 flex-col md:flex-row">
